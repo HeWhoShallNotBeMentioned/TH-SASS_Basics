@@ -25,17 +25,15 @@ header {
   background: linear-gradient(#009fe1, #3acec2), url("../img/bg.jpg") no-repeat;
   background-blend-mode: multiply;
   background-size: cover; }
-
-header h1 {
-  color: #fff;
-  font-size: 4.8em;
-  margin-bottom: 0;
-  letter-spacing: 1px; }
-
-header p {
-  color: #eeea72;
-  font-size: 1.25em;
-  margin: 0; }
+  header h1 {
+    color: #fff;
+    font-size: 4.8em;
+    margin-bottom: 0;
+    letter-spacing: 1px; }
+  header p {
+    color: #eeea72;
+    font-size: 1.25em;
+    margin: 0; }
 
 footer {
   padding: 2em 0 0;
@@ -54,6 +52,15 @@ footer {
 /* COMPONENTS ----------------------------------------------- */
 .main-nav {
   margin-top: 1em; }
+  .main-nav li {
+    display: inline-block;
+    margin: 0 0.65em; }
+  .main-nav a {
+    color: #fff;
+    font-size: 0.85em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5em; }
 
 .card {
   display: flex;
@@ -61,11 +68,11 @@ footer {
   padding: 1.5em 1em;
   border: 1px solid #eee;
   border-radius: .25em; }
-
-.card h1 {
-  color: #278da4;
-  margin: 0.35em 0 0;
-  line-height: 1.25; }
+  .card h1 {
+    margin: 0.35em 0 0;
+    line-height: 1.25; }
+  .card .icon, .card h1 {
+    color: #278da4; }
 
 .btn-info {
   color: #fff;

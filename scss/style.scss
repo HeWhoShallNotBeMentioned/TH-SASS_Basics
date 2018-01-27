@@ -169,7 +169,7 @@ x
   }
 }
 
-.btn {
+%btn {
   color: $white;
   display: inline-block;
   font-weight: bold;
@@ -177,21 +177,29 @@ x
   text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: 0.35em;
+  &:hover {
+    color: $white;
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: initial;
+  }
 }
 
-.btn-callout {
-  font-size: 1.1em;
-  background-color: $color-secondary;
-  @extend .btn;
-}
+.btn {
+  &-callout {
+    font-size: 1.1em;
+    background-color: $color-secondary;
+    @extend %btn;
+  }
 
-.btn-info {
-  font-size: 0.85em;
-  background-color: $color-primary;
-  margin-top: auto;
-  @extend .btn;
+  &-info {
+    font-size: 0.85em;
+    background-color: $color-primary;
+    margin-top: auto;
+    @extend %btn;
+  }
 }
-
 
 /* MEDIA QUERIES ------------------------------------------------- */
 

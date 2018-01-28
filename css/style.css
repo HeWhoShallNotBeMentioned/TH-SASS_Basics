@@ -1,4 +1,46 @@
-/* MIXINS ------------------------------------------------- */
+.btn-callout, .btn-info {
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  border-radius: 0.35em; }
+  .btn-callout:hover, .btn-info:hover {
+    color: #fff;
+    opacity: 0.7; }
+  .btn-callout:active, .btn-info:active {
+    opacity: initial; }
+
+/* MEDIA QUERIES ------------------------------------------------- */
+@media (max-width: 575px) {
+  header {
+    height: 340px; }
+
+  header h1 {
+    font-size: 3.4em; }
+
+  .img-featured {
+    display: none; } }
+@media (min-width: 576px) {
+  .main-content {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .card {
+    flex: 1; } }
+@media (min-width: 768px) {
+  .main-content {
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto; } }
+@media (min-width: 992px) {
+  header {
+    background-position: 0 0, 0 45%; }
+
+  .intro {
+    width: 45%; } }
 /* BASE ------------------------------------------------- */
 * {
   box-sizing: border-box; }
@@ -73,14 +115,6 @@ footer {
     background-color: #eee;
     top: -25px; }
 
-x
-.inner {
-  padding: 0.5em 1em; }
-
-.intro {
-  margin: auto;
-  padding: 1em 1em 3em; }
-
 /* COMPONENTS ----------------------------------------------- */
 .main-nav {
   margin-top: 1em; }
@@ -116,20 +150,6 @@ x
   .card .icon, .card h1 {
     color: #278da4; }
 
-.btn-callout, .btn-info {
-  color: #fff;
-  display: inline-block;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 0.75em 1.5em;
-  border-radius: 0.35em; }
-  .btn-callout:hover, .btn-info:hover {
-    color: #fff;
-    opacity: 0.7; }
-  .btn-callout:active, .btn-info:active {
-    opacity: initial; }
-
 .btn-callout {
   font-size: 1.1em;
   background-color: #b13c69; }
@@ -138,34 +158,12 @@ x
   background-color: #278da4;
   margin-top: auto; }
 
-/* MEDIA QUERIES ------------------------------------------------- */
-@media (max-width: 575px) {
-  header {
-    height: 340px; }
+/* CONTAINERS ---------------------------------------------- */
+.inner {
+  padding: 0.5em 1em; }
 
-  header h1 {
-    font-size: 3.4em; }
-
-  .img-featured {
-    display: none; } }
-@media (min-width: 576px) {
-  .main-content {
-    display: flex;
-    flex-wrap: wrap; }
-
-  .card {
-    flex: 1; } }
-@media (min-width: 768px) {
-  .main-content {
-    width: 90%;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto; } }
-@media (min-width: 992px) {
-  header {
-    background-position: 0 0, 0 45%; }
-
-  .intro {
-    width: 45%; } }
+.intro {
+  margin: auto;
+  padding: 1em 1em 3em; }
 
 /*# sourceMappingURL=style.css.map */

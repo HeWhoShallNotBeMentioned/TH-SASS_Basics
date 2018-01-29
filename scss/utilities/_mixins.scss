@@ -9,7 +9,7 @@
     content: '';
     display: block;
     width: 100%;
-    height: 50px; 
+    height: 50px;
     position: absolute;
     transform: skewY(-2deg);
     @content;
@@ -17,9 +17,18 @@
 }
 
 // Center containers
-@mixin center {
-  width: 90%;
+@mixin center ($w) {
+  width: $w;
   max-width: $max-width;
   margin-left: auto;
   margin-right: auto;
+}
+
+// Rounded Element
+@mixin rowndy ($dim, $brdr) {
+  width: $dim;
+  height: $dim;
+  border: $brdr;
+  border-radius: 50%;
+
 }

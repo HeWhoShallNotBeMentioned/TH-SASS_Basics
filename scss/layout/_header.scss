@@ -23,14 +23,14 @@ header {
     font-size: 1.25em;
     margin: 0;
   }
-  @media (max-width: $break-s) {
+  @include mq('sm') {
       height: 340px;
       h1 {
         font-size: 3.4em;
       }
   }
 
-  @media (min-width: $break-l) {
+  @include mq('lg') {
       background-position: 0 0, 0 45%;
   }
 }

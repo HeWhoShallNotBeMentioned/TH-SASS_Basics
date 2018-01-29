@@ -480,7 +480,7 @@ header {
     color: #eeea72;
     font-size: 1.25em;
     margin: 0; }
-  @media (max-width: 576px) {
+  @media (min-width: 576px) {
     header {
       height: 340px; }
       header h1 {

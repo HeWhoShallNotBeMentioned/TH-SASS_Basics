@@ -4,7 +4,7 @@
 
 .img-featured {
   @include rowndy($brdr: 4px solid $white, $dim: 165px);
-  margin-top: 75px;
+  margin-top: 10px;
   position: relative;
   z-index: 100;
   @include mq('xs') {

@@ -583,7 +583,7 @@ footer {
   height: 165px;
   border: 4px solid #fff;
   border-radius: 50%;
-  margin-top: 75px;
+  margin-top: 10px;
   position: relative;
   z-index: 100; }
   @media (max-width: 575px) {
